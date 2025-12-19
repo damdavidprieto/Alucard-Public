@@ -1,0 +1,56 @@
+# Logs y datos sensibles
+logs/
+*.log
+*.csv
+audit_results.txt
+AUDIT_SUMMARY.md
+FINAL_ANALYSIS.md
+
+# Datos personales y experimentos
+data/
+backups/
+honeypot/
+kali/
+deploy/
+config/
+shared/
+test_*.py
+scan_*.py
+analyze_logs.py
+*.png
+*.jpg
+*.jpeg
+
+# Configuración local
+.vscode/
+.idea/
+*.pyc
+__pycache__/
+.env
+.env.*
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporales
+*.tmp
+*.temp
+~*
+
+# Documentación no pública (solo mantener 00-04)
+docs/05_*.md
+docs/06_*.md
+docs/07_*.md
+docs/08_*.md
+docs/09_*.md
+docs/1*.md
+docs/2*.md
+docs/3*.md
+docs/4*.md
+docs/5*.md
+docs/_*.md
+docs/*.csv
+docs/*.txt
+docs/*.png
