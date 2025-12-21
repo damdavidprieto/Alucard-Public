@@ -5,7 +5,7 @@
 [![Approach: Defensive](https://img.shields.io/badge/Approach-Defensive-green.svg)]()
 
 > **"Si he visto más lejos es porque estoy sentado sobre los hombros de gigantes."** - Isaac Newton
-
+> **"El arte es la mentira que nos permite comprender la verdad"** - Pablo Picasso
 ---
 
 ## ⚠️ Aviso Importante
@@ -33,28 +33,28 @@ Este es un **proyecto de aprendizaje en desarrollo**. Documenta mi viaje desde p
 
 Lee los documentos en este orden para entender el proyecto:
 
-### 1️⃣ [Léeme Primero](01_LEEME_PRIMERO.md)
+### 1️⃣ [Léeme Primero](docs/01_Introduccion.md)
 **Contexto y Agradecimientos**
 - El momento de reflexión (2025-12-19)
 - Por qué existe este proyecto
 - Agradecimientos a la comunidad
 - Filosofía de transparencia
 
-### 2️⃣ [Diario de Aprendizaje](02_DIARIO_DE_APRENDIZAJE.md)
+### 2️⃣ [Diario de Aprendizaje](docs/02_Diario_Aprendizaje.md)
 **Mi Viaje Día a Día**
 - Entradas diarias de progreso
 - Qué aprendí cada día
 - Proceso de pensamiento
 - Recursos que me ayudaron
 
-### 3️⃣ [Errores y Lecciones](03_ERRORES_Y_LECCIONES.md)
+### 3️⃣ [Errores y Lecciones](docs/03_Errores_Lecciones.md)
 **Errores Específicos Documentados**
 - Qué hice mal (con detalles)
 - Por qué fue peligroso
 - Cómo lo corregí
 - Lecciones para otros
 
-### 4️⃣ [Herramientas y Metodología](04_HERRAMIENTAS_Y_METODOLOGIA.md)
+### 4️⃣ [Herramientas y Metodología](docs/04_Metodologia.md)
 **Transparencia sobre el Desarrollo**
 - Uso de Antigravity (Google Gemini)
 - Código generado vs manual
@@ -62,10 +62,10 @@ Lee los documentos en este orden para entender el proyecto:
 - Lecciones sobre desarrollo asistido por IA
 
 ### 5️⃣ Documentación Técnica
-- [Referencias y Atribuciones](docs/01_REFERENCIAS_Y_ATRIBUCIONES.md)
-- [Guía de Referencia U7Dani](docs/02_GUIA_DE_REFERENCIA_U7DANI.md)
-- [Auditoría de Seguridad del Router](docs/03_ROUTER_SECURITY_AUDIT.md)
-- [Seguridad de Red](docs/04_NETWORK_SECURITY_README.md)
+- [Referencias y Atribuciones](docs/01_Introduccion.md)
+
+- [Auditoría de Seguridad del Router](docs/05_Auditoria_Router_Manual.md)
+- [Guía de Auditoría de Red](docs/06_Guia_Auditoria_Red.md)
 
 ---
 
@@ -83,16 +83,21 @@ Alucard es mi ecosistema de aprendizaje en ciberseguridad defensiva (Blue Team).
 ### ¿Por Qué "Alucard"?
 
 Porque es "Dracula" al revés - un guardián que protege en lugar de atacar. Representa el enfoque defensivo del proyecto.
+Además tiene su poder totalmente restringido y solo puede ser liberado cuando se lo permiten. 
+Solo sirve a Integra, la cual tiene la sangre dulce y por eso la protege. Contiene todas las almas acumuladas y cuando es necesario las usa. 
+Actúa como un honeypot: evaluando al oponente, recibiendo, cambiando de forma y respondiendo cuando le dan permiso.
+Nunca utiliza más poder del necesario y solo cuando es necesario. 
+Aparece cuando es necesario y desaparece cuando es necesario.
 
 ### Componentes Principales
 
 ```
 Alucard/
 ├── 📄 Documentación de Aprendizaje
-│   ├── 01_LEEME_PRIMERO.md
-│   ├── 02_DIARIO_DE_APRENDIZAJE.md
-│   ├── 03_ERRORES_Y_LECCIONES.md
-│   └── 04_HERRAMIENTAS_Y_METODOLOGIA.md
+│   ├── docs/01_Introduccion.md
+│   ├── docs/02_Diario_Aprendizaje.md
+│   ├── docs/03_Errores_Lecciones.md
+│   └── docs/04_Metodologia.md
 │
 ├── 🛠️ Scripts de Seguridad
 │   ├── analyze_network.ps1        # Análisis pasivo de red
@@ -100,9 +105,20 @@ Alucard/
 │
 ├── 📚 Documentación Técnica
 │   ├── 01_REFERENCIAS_Y_ATRIBUCIONES.md
-│   ├── 02_GUIA_DE_REFERENCIA_U7DANI.md
-│   ├── 03_ROUTER_SECURITY_AUDIT.md
-│   └── 04_NETWORK_SECURITY_README.md
+│   ├── 05_Auditoria_Router_Manual.md
+│   ├── 06_Guia_Auditoria_Red.md
+│   ├── 07_Arquitectura_Sistema.md   # Arquitectura de 3 capas
+│   ├── 08_Escenarios_Ataque_Honeypot.md # Escenarios de pentesting
+│   ├── 09_Manual_Codigo_Honeypot.md # Guía de aprendizaje Python
+│   └── 10_Guia_Hardening.md         # Plan de blindaje del sistema
+│
+├── 🍯 Honeypot Educativo
+│   ├── README.md                    # ⚠️ Ver disclaimers
+│   ├── main.py                      # Punto de entrada
+│   ├── config.py                    # Configuración
+│   ├── services/                    # HTTP, SSH
+│   ├── responses/                   # Endpoints y trampas
+│   └── detection/                   # Detección de ataques
 │
 └── 📊 Logs y Reportes
     └── logs/network/
@@ -138,6 +154,57 @@ Alucard/
 
 ---
 
+## 📚 Recursos Educativos
+
+Esta sección contiene guías detalladas para aprender sobre diferentes aspectos de la ciberseguridad defensiva:
+
+### 🏗️ [Arquitectura del Sistema](docs/07_Arquitectura_Sistema.md)
+**Arquitectura de 3 Capas: Windows + Docker + Kali VM**
+- Diagramas completos del sistema
+- Flujo de datos entre capas
+- Comparación de tecnologías
+- Escenarios de uso por capa
+- Recomendaciones de seguridad
+
+### 🎯 [Escenarios de Ataque](docs/08_Escenarios_Ataque_Honeypot.md)
+**Guía Práctica de Pentesting Ético**
+- Reconocimiento con nmap
+- Enumeración web (nikto, dirb, gobuster)
+- Ataques de inyección (SQL, XSS, Command Injection)
+- Fuerza bruta SSH con Hydra
+- Análisis de tráfico con Wireshark
+- Scripts automatizados de ataque
+- ⚠️ **Solo para uso en tus propios sistemas**
+
+### 🔍 [Guía de Auditoría de Red](docs/06_Guia_Auditoria_Red.md)
+**Cómo Auditar Tu Red Doméstica**
+- Opciones: DIY, Profesional, Automatizada
+- Herramientas gratuitas (Fing, nmap, Wireshark)
+- Auditoría de router paso a paso
+- Escaneo de vulnerabilidades
+- Hardening de dispositivos IoT
+- Checklist completa de seguridad
+
+### 🛡️ [Plan de Hardening](docs/10_Guia_Hardening.md)
+**Blindaje Completo del Sistema Windows**
+- Filosofía "Deny by Default"
+- Cierre de puertos críticos (SMB, RPC, RDP)
+- Configuración de firewall restrictivo
+- Deshabilitación de servicios vulnerables
+- Auditoría y monitoreo
+- Scripts PowerShell listos para usar
+
+### 🎓 [Manual Técnico de Python](docs/09_Manual_Codigo_Honeypot.md)
+**Aprende Python con el Código del Honeypot**
+- Sistema de módulos e imports
+- Concurrencia con threading
+- Programación de sockets
+- Clases y herencia
+- Manejo de excepciones
+- Explicaciones paso a paso del código
+
+---
+
 ## 🛠️ Tecnologías
 
 - **PowerShell** - Scripts de análisis y monitoreo
@@ -164,7 +231,7 @@ Este proyecto no existiría sin el trabajo de la comunidad de ciberseguridad. Es
 - [T-Pot](https://github.com/telekom-security/tpotce) - Honeypots
 - [TheHive](https://thehive-project.org/) - Incident Response
 
-**Ver [01_REFERENCIAS_Y_ATRIBUCIONES.md](docs/01_REFERENCIAS_Y_ATRIBUCIONES.md) para detalles completos.**
+**Ver [01_REFERENCIAS_Y_ATRIBUCIONES.md](docs/01_Introduccion.md) para detalles completos.**
 
 ---
 
@@ -173,8 +240,8 @@ Este proyecto no existiría sin el trabajo de la comunidad de ciberseguridad. Es
 ### Si Estás Empezando
 
 **Lee primero**:
-1. [Errores y Lecciones](03_ERRORES_Y_LECCIONES.md) - Aprende de mis errores
-2. [Diario de Aprendizaje](02_DIARIO_DE_APRENDIZAJE.md) - Ve el proceso real
+1. [Errores y Lecciones](docs/03_Errores_Lecciones.md) - Aprende de mis errores
+2. [Diario de Aprendizaje](docs/02_Diario_Aprendizaje.md) - Ve el proceso real
 
 **Consejos**:
 - ✅ Usa VMs SIEMPRE para experimentar
@@ -325,11 +392,11 @@ A todos los que comparten conocimiento en la comunidad de ciberseguridad:
 
 ## 🔗 Enlaces Rápidos
 
-- [Léeme Primero](01_LEEME_PRIMERO.md) - Empieza aquí
-- [Diario](02_DIARIO_DE_APRENDIZAJE.md) - Progreso día a día
-- [Errores](03_ERRORES_Y_LECCIONES.md) - Aprende de mis errores
-- [Metodología](04_HERRAMIENTAS_Y_METODOLOGIA.md) - Desarrollo con IA
-- [Referencias](docs/01_REFERENCIAS_Y_ATRIBUCIONES.md) - Fuentes y atribuciones
+- [Léeme Primero](docs/01_Introduccion.md) - Empieza aquí
+- [Diario](docs/02_Diario_Aprendizaje.md) - Progreso día a día
+- [Errores](docs/03_Errores_Lecciones.md) - Aprende de mis errores
+- [Metodología](docs/04_Metodologia.md) - Desarrollo con IA
+- [Referencias](docs/01_Introduccion.md) - Fuentes y atribuciones
 - [Licencia](LICENSE) - MIT License
 
 ---

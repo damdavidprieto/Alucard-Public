@@ -148,50 +148,70 @@ Get-NetFirewallRule | Where-Object {$_.DisplayName -like "*SMB*"}
 
 #### Qué Hice Mal
 
-Usaba ideas, arquitecturas y conceptos de proyectos de otros (especialmente de U7Dani) sin:
-- Citar las fuentes
-- Documentar la inspiración
-- Dar crédito apropiado
+Empecé el proyecto **sin ninguna documentación** de fuentes o referencias. Desarrollaba experimentando sin:
+- Buscar referencias de proyectos similares
+- Documentar el proceso de aprendizaje
+- Investigar buenas prácticas de la comunidad
+- Citar fuentes de conocimiento
 
-**Ejemplo**:
+**El momento de reflexión (2025-12-19)**:
+Al descubrir los repositorios de U7Dani, me di cuenta de que:
+1. Ya existían proyectos similares y mejores
+2. Debería haber investigado ANTES de empezar
+3. No había documentado mi proceso de aprendizaje
+4. No tenía referencias claras de dónde venían mis ideas
+
+**Ejemplo de lo que NO hacía**:
 ```python
-# Código inspirado en PhishScope
-# Pero sin mencionar la fuente
+# Código sin contexto ni referencias
+# Sin documentar de dónde aprendí estos conceptos
 def analyze_email(email_file):
-    # ... código similar a PhishScope
+    # ... código sin atribución
 ```
 
 #### Por Qué Fue Problemático
 
-1. **Ética**: Falta de respeto por el trabajo de otros
-2. **Legal**: Potencial violación de licencias
-3. **Profesional**: Mala práctica en desarrollo
-4. **Aprendizaje**: No documentaba de dónde aprendía
+1. **Ética**: Desarrollar sin investigar la comunidad primero
+2. **Aprendizaje**: Reinventar la rueda en lugar de aprender de otros
+3. **Profesional**: No seguir estándares de la industria
+4. **Comunidad**: No dar crédito a quienes me inspiraron (incluso indirectamente)
 
 #### Cómo lo Corregí
 
-**Acciones inmediatas**:
-1. Creé `REFERENCIAS_Y_ATRIBUCIONES.md`
-2. Documenté TODAS las fuentes de inspiración
-3. Añadí LICENSE con nota de atribución
-4. Creé `AGRADECIMIENTOS.md`
+**El momento revelador (2025-12-19)**:
+Al descubrir el perfil de U7Dani y ver cómo documentaba sus proyectos, entendí que:
+- Debía investigar la comunidad ANTES de desarrollar
+- Necesitaba documentar TODO mi proceso
+- Debía dar crédito a quienes me inspiraron
+- La transparencia es fundamental
 
-**Proceso establecido**:
+**Acciones inmediatas tras el descubrimiento**:
+1. Detuve todo desarrollo nuevo
+2. Investigué proyectos similares (U7Dani, Wazuh, T-Pot)
+3. Creé `REFERENCIAS_Y_ATRIBUCIONES.md` desde cero
+4. Documenté TODAS las fuentes que encontré
+5. Añadí LICENSE con nota de atribución
+6. Creé documentación de agradecimientos
+7. Escribí este documento de errores
+
+**Proceso establecido para el futuro**:
 ```markdown
-# Antes de usar cualquier idea:
-1. ¿De dónde viene esta idea?
-2. ¿Tiene licencia? ¿Cuál?
-3. ¿Cómo debo citarla?
-4. ¿Estoy adaptando o copiando?
-5. Documentar en REFERENCIAS.md
+# ANTES de empezar cualquier proyecto:
+1. Investigar qué existe ya en la comunidad
+2. Estudiar proyectos similares
+3. Documentar fuentes de inspiración
+4. Verificar licencias
+5. Dar crédito apropiado desde el inicio
+6. Mantener REFERENCIAS.md actualizado
 ```
 
-**Código correcto**:
+**Código correcto (ahora)**:
 ```python
 # Inspirado en PhishScope de U7Dani
 # https://github.com/U7Dani/PhishScope
 # Licencia: MIT
-# Adaptado para Windows y con modificaciones propias
+# Adaptado para Windows con implementación propia
+# Descubierto: 2025-12-19
 def analyze_email(email_file):
     # ... mi implementación
 ```

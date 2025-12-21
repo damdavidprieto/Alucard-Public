@@ -14,6 +14,14 @@ Este proyecto, **Alucard**, nació como un ejercicio de aprendizaje en cibersegu
 
 ---
 
+*"El arte es la mentira para ver la verdad"*  
+*- Pablo Picasso*
+
+*"Si he visto más lejos es porque estoy sentado sobre los hombros de gigantes."*  
+*- Isaac Newton*
+
+---
+
 ## 🌟 Agradecimientos Especiales
 
 ### Proyectos de Referencia
@@ -112,7 +120,7 @@ Agradecimientos a:
 ### Lo que Alucard SÍ es
 
 - ✅ Un proyecto de aprendizaje **inspirado** por excelentes referencias
-- ✅ Una implementación **original** con código propio
+- ✅ Una implementación **original** desarrollada con **asistencia de IA** (Antigravity/Gemini)
 - ✅ Un ejercicio de **transparencia** y **ética** en el desarrollo
 - ✅ Una contribución **honesta** a la comunidad educativa
 - ✅ Un proyecto enfocado en **Windows** (vs Linux de las referencias)
@@ -141,12 +149,20 @@ Este proyecto se compromete a:
 
 ## 📅 Cronología del Proyecto
 
-### 2025-12-19: Momento de Reflexión
+### 2025-12-19 (Inicio): Creación del Proyecto
+- Inicio del proyecto Alucard como ejercicio de aprendizaje
+- Experimentación inicial con herramientas de seguridad defensiva
+- Desarrollo de scripts de análisis (PowerShell, Python)
+- Implementación de sistema de logging centralizado
+- Creación de componentes: Metatron, Samael, Uriel
+
+### 2025-12-19 (Tarde): Momento de Reflexión
 - Reconocimiento de prácticas de seguridad inadecuadas
 - Búsqueda de referencias en la comunidad
-- Descubrimiento del perfil U7Dani
+- Descubrimiento del perfil U7Dani (momento revelador)
 - Decisión de documentar todas las fuentes
-- Creación de documentos de atribución
+- Creación de documentos de atribución y transparencia
+- Compromiso con la ética y el desarrollo responsable
 
 ### Próximos Pasos
 - Continuar aprendizaje ético
@@ -156,13 +172,7 @@ Este proyecto se compromete a:
 
 ---
 
-## 🔗 Documentación Relacionada
 
-Para más información sobre las referencias y atribuciones de este proyecto:
-
-- [REFERENCIAS_Y_ATRIBUCIONES.md](docs/REFERENCIAS_Y_ATRIBUCIONES.md) - Documento oficial de atribuciones
-- [GUIA_DE_REFERENCIA_U7DANI.md](docs/GUIA_DE_REFERENCIA_U7DANI.md) - Guía de aprendizaje detallada
-- [LICENSE](LICENSE) - Licencia MIT con nota de atribución
 
 ---
 
@@ -201,15 +211,8 @@ Este documento se actualizará cuando:
 **Última actualización**: 2025-12-19  
 **Próxima revisión**: 2026-01-19
 
----
-
-*"Si he visto más lejos es porque estoy sentado sobre los hombros de gigantes."*  
-*- Isaac Newton*
-
----
-
 **Este documento es un registro permanente del compromiso de Alucard con la transparencia, la ética y el respeto por la comunidad de código abierto.**
 
 *Creado: 2025-12-19 20:03 CET*  
-*Autor: Usuario*  
+*Autor: [@damdavidprieto](https://github.com/damdavidprieto)*  
 *Proyecto: Alucard - Ecosistema de Seguridad Defensiva*

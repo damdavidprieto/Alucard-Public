@@ -9,7 +9,8 @@ FINAL_ANALYSIS.md
 # Datos personales y experimentos
 data/
 backups/
-honeypot/
+honeypot/offensive/
+honeypot/*.log
 kali/
 deploy/
 config/

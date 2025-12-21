@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 [Tu Nombre/Usuario]
+Copyright (c) 2025 David Prieto Recio
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -28,7 +28,7 @@ This project is inspired by and references work from the cybersecurity community
 particularly projects by U7Dani (https://github.com/U7Dani).
 
 For a complete list of attributions and references, see:
-docs/REFERENCIAS_Y_ATRIBUCIONES.md
+docs/01_Introduccion.md
 
 This project is developed independently and does not reuse code from referenced
 projects without proper attribution. All inspiration sources are documented

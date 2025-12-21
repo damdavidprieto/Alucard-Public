@@ -1,0 +1,35 @@
+{
+    "generic": [
+        "/admin",
+        "/login",
+        "/auth"
+    ],
+    "wordpress": [
+        "/wp-admin",
+        "/wp-login.php",
+        "/xmlrpc.php"
+    ],
+    "api": [
+        "/api",
+        "/actuator",
+        "/swagger"
+    ],
+    "database": [
+        "/phpmyadmin",
+        "/pgadmin"
+    ],
+    "iot": [
+        "/cgi-bin",
+        "/camera"
+    ],
+    "iot_tapo": [
+        "/",
+        "/stps",
+        "/onvif"
+    ],
+    "devops": [
+        "/.env",
+        "/docker-compose",
+        "/config"
+    ]
+}
