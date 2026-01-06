@@ -112,8 +112,15 @@ param(
     #   .\audit_secrets.ps1 -OutputFile "C:\resultados.txt"
     #
     [Parameter(Mandatory = $false)]
-    [string]$OutputFile = (Join-Path $PSScriptRoot "audit_results.txt")
+    [string]$OutputFile
 )
+
+if (-not $OutputFile) {
+    $ScriptName = $MyInvocation.MyCommand.Name -replace '\.ps1$', ''
+    $logDir = Join-Path $PSScriptRoot "..\logs\$ScriptName"
+    if (-not (Test-Path $logDir)) { New-Item -ItemType Directory -Path $logDir -Force | Out-Null }
+    $OutputFile = Join-Path $logDir "${ScriptName}_results.txt"
+}
 
 # ===============================================================================
 # CONFIGURACION - Palabras clave para identificar archivos del honeypot

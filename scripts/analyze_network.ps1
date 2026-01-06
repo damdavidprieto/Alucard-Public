@@ -33,10 +33,11 @@ $ScriptDir = $PSScriptRoot
 $ProjectRoot = Split-Path -Parent $ScriptDir
 
 # Join-Path une partes de una ruta de forma segura (añade las barras \ automáticamente).
-# Aquí definimos dónde guardaremos los informes (dentro de logs/network).
+# Aquí definimos dónde guardaremos los informes (dentro de logs/AnalyzeNetwork).
+$ScriptName = $MyInvocation.MyCommand.Name -replace '\.ps1$', ''
 $LogBase = Join-Path $ProjectRoot "logs"
-$ReportDir = Join-Path $LogBase "network\reports"
-$JsonDir = Join-Path $LogBase "network"
+$ReportDir = Join-Path $LogBase $ScriptName
+$JsonDir = Join-Path $ReportDir "json"
 
 # Generamos la fecha y hora actual para poner nombre a los archivos.
 # Ejemplo: 2025-12-21_17-30-00
@@ -48,11 +49,11 @@ $reportFile = Join-Path $ReportDir "network_analysis_$timestamp.md"
 
 # Creamos las carpetas si no existen (-Force evita errores si ya están creadas).
 Write-Host "[*] Preparando entorno..." -ForegroundColor Yellow
-if (!(Test-Path $ReportDir)) {
-    New-Item -ItemType Directory -Force -Path $ReportDir | Out-Null
+if (-not (Test-Path $ReportDir)) {
+    New-Item -Path $ReportDir -ItemType Directory -Force | Out-Null
     Write-Host "    [+] Directorio de reportes creado: $ReportDir" -ForegroundColor DarkGray
 }
-if (!(Test-Path $JsonDir)) {
+if (-not (Test-Path $JsonDir)) {
     New-Item -ItemType Directory -Force -Path $JsonDir | Out-Null
 }
 
@@ -327,6 +328,6 @@ Write-Host "       $reportFile" -ForegroundColor Gray
 Write-Host "`n[TIP] Abre el archivo .md para ver el detalle." -ForegroundColor Yellow
 Write-Host "=========================================" -ForegroundColor Cyan
 
-# Pausa para que el usuario pueda leer si lo ejecutó con doble click
-Write-Host "Presione Enter para cerrar..."
-Read-Host
+# Pausa eliminada para automatizacion
+# Write-Host "Presione Enter para cerrar..."
+# Read-Host

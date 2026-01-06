@@ -38,16 +38,17 @@ $ScriptDir = $PSScriptRoot
 $ProjectRoot = Split-Path -Parent $ScriptDir
 
 # Carpetas de salida
+$ScriptName = $MyInvocation.MyCommand.Name -replace '\.ps1$', ''
 $LogBase = Join-Path $ProjectRoot "logs"
-$ReportDir = Join-Path $LogBase "network\reports"
+$ReportDir = Join-Path $LogBase $ScriptName
 
 # Fecha para el nombre del archivo
 $timestamp = Get-Date -Format "yyyy-MM-dd_HH-mm-ss"
 $reportFile = Join-Path $ReportDir "router_compromise_check_$timestamp.md"
 
 # Crear carpetas si no existen
-if (!(Test-Path $ReportDir)) {
-    New-Item -ItemType Directory -Force -Path $ReportDir | Out-Null
+if (-not (Test-Path $ReportDir)) {
+    New-Item -Path $ReportDir -ItemType Directory -Force | Out-Null
 }
 
 $indicators = @()
@@ -292,5 +293,5 @@ Write-Host $verdict -ForegroundColor $verdictColor
 Write-Host "Reporte guardado en: $reportFile" -ForegroundColor Cyan
 Write-Host "=========================================`n" -ForegroundColor Cyan
 
-Write-Host "Presione Enter para cerrar..."
-Read-Host
+# Write-Host "Presione Enter para cerrar..."
+# Read-Host

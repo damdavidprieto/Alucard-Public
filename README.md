@@ -100,8 +100,9 @@ Alucard/
 │   └── docs/04_Metodologia.md
 │
 ├── 🛠️ Scripts de Seguridad
-│   ├── analyze_network.ps1        # Análisis pasivo de red
-│   └── check_router_compromise.ps1 # Detección de compromiso
+│   ├── analyze_browsers.ps1         # Análisis forense de navegadores
+│   ├── analyze_network.ps1          # Análisis pasivo de red
+│   └── check_router_compromise.ps1  # Detección de compromiso
 │
 ├── 📚 Documentación Técnica
 │   ├── 01_REFERENCIAS_Y_ATRIBUCIONES.md
@@ -184,6 +185,15 @@ Esta sección contiene guías detalladas para aprender sobre diferentes aspectos
 - Escaneo de vulnerabilidades
 - Hardening de dispositivos IoT
 - Checklist completa de seguridad
+
+### 🌐 [Análisis Forense de Navegadores](docs/11_Guia_Analisis_Navegadores.md)
+**Detección de Compromiso en Navegadores Web**
+- Análisis de extensiones sospechosas
+- Detección de dominios maliciosos en historial
+- Verificación de configuraciones alteradas
+- Identificación de certificados sospechosos
+- Guía de interpretación de resultados
+- Sin permisos de administrador requeridos
 
 ### 🛡️ [Plan de Hardening](docs/10_Guia_Hardening.md)
 **Blindaje Completo del Sistema Windows**

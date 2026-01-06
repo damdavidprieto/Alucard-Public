@@ -41,12 +41,12 @@ desktop.ini
 ~*
 
 # Documentación no pública (solo mantener 00-04)
-docs/05_*.md
-docs/06_*.md
-docs/07_*.md
-docs/08_*.md
-docs/09_*.md
-docs/1*.md
+# docs/05_*.md
+# docs/06_*.md
+# docs/07_*.md
+# docs/08_*.md
+# docs/09_*.md
+# docs/1*.md
 docs/2*.md
 docs/3*.md
 docs/4*.md
